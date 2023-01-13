@@ -1,5 +1,7 @@
 import vor
 """
+# Example 1
+
 a = "1235" ################# int
 b = "12.4" ################# float
 c = "ali"  ################# str_fh 
@@ -47,7 +49,7 @@ print(vor.chek(k , "tuple"))
 """
 
 
-# Example
+# Example 2
 
 val = input("Enter : ")
 
@@ -63,3 +65,19 @@ elif vor.chek(val) == "str_g" :
     print ("The value entered by the user is mixed")
 elif vor.chek(val) == "khali" :
     print ("The value entered by the user is empty")
+
+
+# Example 3
+
+val = input("Enter : ")
+
+if vor.chek(val , "int") :
+    print ("The value entered by the user is an integer")
+elif vor.chek(val , "float") :
+    print ("The value entered by the user is an float")
+elif vor.chek(val , "str_fh") :
+    print ("The value entered by the user is only letters")
+elif vor.chek(val , "str_g") :
+    print ("The value entered by the user is an mixed")
+elif vor.chek(val , "khali") :
+    print ("The value entered by the user is an empty")
