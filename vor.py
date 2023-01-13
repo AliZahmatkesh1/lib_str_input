@@ -36,7 +36,7 @@ def chek(vr,vv=None):
             m = vr[chek]
             while t1 < len(a) + 1:
                 if m == "." :
-                    boo = 1
+                    boo = boo + 1
                     bo = bo + 1
                 if m == a[chek1] :
                     bo = bo + 1
@@ -56,7 +56,7 @@ def chek(vr,vv=None):
 
         if ris == "int" :
             akhar = "int"
-        elif boo == 1 :
+        elif boo == 10 :
             akhar = "float"
         elif bo == 0 :
             vr = vr.lower()
