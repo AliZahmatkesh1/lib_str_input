@@ -1,7 +1,7 @@
 def chek(vr,vv=None):
     """(x = Variable ) => Type Variable
        (x = Variable , y = Type) => bool
-       => | int | float | str_fh | str_g | khali | list | bool | tuple | none |"""
+       => | int | float | str_fh | str_g | khali | list | bool | tuple | dict | none |"""
     typ = str(type(vr))
     a = ["0","1","2","3","4","5","6","7","8","9"]
     a10 = ["a","b","c","d","e","f","j","h","i","g","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
@@ -20,6 +20,8 @@ def chek(vr,vv=None):
         akhar = "tuple"
     elif typ == "<class 'list'>" :
         akhar = "list"
+    elif typ == "<class 'dict'>" :
+        akhar = "dict"
     elif typ == "<class 'int'>" :
         akhar = "int"
     elif typ == "<class 'bool'>" :
