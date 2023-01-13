@@ -57,7 +57,7 @@ def chek(vr,vv=None):
 
         if ris == "int" :
             akhar = "int"
-        elif boo == 10 :
+        elif boo == 10 and bo == len(vr) + 9  :
             akhar = "float"
         elif bo == 0 :
             vr = vr.lower()
